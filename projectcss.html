@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <title>MINI PROJECT CSS</title>
+        <style>
+            p {
+                margin-top: 5px;
+            }
+            body {
+                background-color: white;
+                padding: 0;
+                margin: 10px;
+                font-family: "Roboto", sans-serif;
+            }
+            header {
+                background: rgb(243, 205, 129);
+                background: linear-gradient(90deg,
+                rgba(243, 205, 129, 1) 0%,
+                rgb(210, 124, 71) 50%,
+                rgb(220, 98, 32) 80%);
+                padding: 15px 50px;
+                display: flex;
+                justify-content: center; 
+            }
+            footer {
+                background: rgb(243, 205, 129);
+                padding: 15px 50px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                text-align: center; 
+            }
+            .headerContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 80%;
+                max-width: 1000px; 
+                gap: 10px;
+            }
+            .holderProfile {
+                flex: 0.8;
+                text-align: right;
+                margin-right: 40px;
+            }
+            .profile {
+                height: 120px;
+                width: 120px;
+                border: 5px solid white;
+                border-radius: 50%;
+            }
+            .holderDetailProfile {
+                flex: 1;
+                text-align: left;
+            }
+            .nameProfile {
+                font-size: 24px;
+                font-weight: 700;
+                text-transform: uppercase;
+            }
+            .titleProfile {
+                font-size: 18px;
+                font-style: italic;
+            }
+            .buttons {
+                margin-top: 10px;
+            }
+            button {
+                margin-right: 10px;
+                border: none;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-family: "Roboto", sans-serif;
+                font-size: 16px;
+                cursor: pointer;
+                font-weight: 600;
+            }
+            .downloadCV {
+                background-color: antiquewhite;
+                color: rgb(110, 46, 11);
+            }
+            .hire {
+                background-color: rgba(243, 205, 129);
+                color: rgb(75, 29, 4);
+            }
+            button:hover {
+                transform: scale(1.05);
+            }
+            .aboutMe {
+                font-size: 18px;
+                font-weight: 500;
+            }
+            .barContainer {
+                width: 100%;
+                height: 10px;
+                background-color: rgb(243, 205, 129);
+                border-radius: 20px;
+                position: relative;
+            }
+            .barFillHTML {
+                width: 70%;
+                background-color: rgb(220, 98, 32);
+                height: 10px;
+                position: absolute;
+                border-radius: 20px;
+            }
+            .barFillCSS {
+                width: 80%;
+                background-color: rgb(220, 98, 32);
+                height: 10px;
+                position: absolute;
+                border-radius: 20px;
+            }
+            .barFillFigma {
+                width:90%;
+                background-color: rgb(220, 98, 32);
+                height: 10px;
+                position: absolute;
+                border-radius: 20px;
+            }
+            span {
+                font-weight: 600;
+            }
+            strong {
+                color: rgb(220, 98, 32);
+            }
+            .socmedLinks {
+                justify-content: center;
+                gap: 20px;
+                display: flex;
+            }
+            .socmedLinks img{
+                filter: grayscale(1);
+                margin: 5px;
+                justify-content: center;
+            }
+            .socmedLinks a {
+                display: flex;
+                align-items: center;
+                text-decoration: none; 
+                color: black;
+}
+        </style>
+    </head>
+    <header>
+        <div class="headerContainer">
+            <div class="holderProfile">
+                <img class="profile" src="rilakuma.png">
+            </div>
+            <div class="holderDetailProfile">
+                <div class="nameProfile">Elsya Putri Ramadhani</div>
+                <div class="titleProfile">Front-End Developers & UI/UX Designer</div>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1jiv8eByHcEWUlkGCAxLRQWnANAEWdkx7/view?usp=sharing" target="_blank">
+                        <button class="downloadCV">Download CV</button>
+                    </a>
+                    <a href="https://linkedin.com/in/elsya-putri-ramadhani"></a>
+                        <button class="hire">Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="contentHolder">
+            <div>
+                <h1>About Me</h1>
+                <div class="aboutMe">
+                    Hello! I am an Informatics student with skills and interest in UI/UX design,research, and data analyst. Passionate to
+                    learn and contribute in any innovative projects to leveraging my knowledge.
+                </div>
+            </div>
+            <div>
+                <h1>Skills</h1>
+                <div class="skillBar">
+                    <h3>HTML</h3>
+                    <div class="barContainer">
+                        <div class="barFillHTML"></div>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h3>CSS</h3>
+                    <div class="barContainer">
+                        <div class="barFillCSS"></div>
+                    </div>
+                </div>
+                <div class="skillBar">
+                    <h3>Figma</h3>
+                    <div class="barContainer">
+                        <div class="barFillFigma"></div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h1>Leadeship & Activities</h1>
+                <ul>
+                    <li>
+                        <span>Badan Eksekutif Mahasiswa Fakultas Ilmu Komputer UPNVJ</span>
+                        <p>As <strong>Treasurer</strong>, I manage the budget by ensuring
+                            financial transparency, tracking income and expenses, allocating
+                            funds to support student events and activities, and developing
+                            proposed budgets that align with the organization's goals and
+                            priorities.</p>
+                    </li>
+                    <li>
+                        <span>Festival Keluarga Besar Mahasiswa Fakultas Ilmu Komputer (KBM-IK) 2024</span>
+                        <p>As a <strong>Creative Division Staff</strong>, I handled the event
+                            documentation and did the design for promotional materials such
+                            as posters for open donation campaigns and a national seminar.
+                            With team work management, we focused on creating a attractive
+                            design to enhance audience engagement and communication.</p>
+                    </li>
+                    <li>
+                        <span>KSM Multimedia UPNVJ</span>
+                        <p>As a <strong>Head of Media Information Division</strong>, I am responsible
+                            for leading and supporting my team in executing various programs. Supervising,
+                            creating, and designing content needed for work programs within KSM Multimedia.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="holderFooter">
+            <div class="contactMe">Contact Me:</div>
+            <div class="socmedLinks">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/elsya-putri-ramadhani" target="_blank">
+                        <img src="linkedin.png" height="24px" class="linkedinLogo">
+                        Elsya Putri Ramadhani
+                    </a>
+                </div>
+                <div class="email">
+                    <a href="mailto:elsyap2252@gmail.com">
+                        <img src="email.png" height="24px" class="emailLogo">
+                        elsyap2252@gmail.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</html>
